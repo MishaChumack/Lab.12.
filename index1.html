@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Laba_12</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #main {
+            display: flex;
+            min-height: calc(100vh - 20vh);
+        }
+
+            #main > article {
+                flex: 1;
+            }
+
+            #main > nav,
+            #main > aside {
+                flex: 0 0 40vh;
+                background: #4169E1;
+            }
+
+            #main > nav {
+                order: -1;
+            }
+
+        header, footer, article, nav, aside {
+            padding: 1em;
+        }
+
+        header, footer {
+            background: #7B68EE;
+            height: 10vh;
+            position:static;
+        }
+        h1 ,h2,h3,h4,h5,h6 {
+              font-family: Arial;
+        }
+        section {
+
+            color: white;
+            border-radius: 1em;
+            padding: 1em;
+            position:relative;
+            top: 20%;
+            left: 50%;
+
+            transform: translate(-50%, -50%)
+        }
+        .layer3 {
+            width: 300px; /* Ширина */
+            height:100%;
+            padding: 10px; /* Поля */
+
+            background: #1E90FF; /* Колір фона */
+            border: 5px; /* Параметри рамки*/
+        }
+        .layer4 {
+            width: 300px; /* Ширина */
+            height:130%;
+            padding: 10px; /* Поля */
+
+                 background: linear-gradient(to right, #0066cc 11%, #66ccff 73%);
+
+
+            border: 5px  black; /* Параметри рамки*/
+        }
+        .layer5 {
+            width: 100%; /* Ширина */
+            height:100%;
+            padding: 10px; /* Поля */
+
+            background: #1E90FF; /* Колір фона */
+            border: 5px; /* Параметри рамки*/
+        }
+        .sign {
+            float: right; /* Выравнивание по правому краю */
+            border: 1px solid #333; /* Параметры рамки */
+            padding: 7px; /* Поля внутри блока */
+            margin: 10px 0 5px 5px; /* Отступы вокруг */
+            background: #f0f0f0; /* Цвет фона */
+        }
+        .sign1 {
+            float: left; /* Выравнивание по правому краю */
+            border: 1px solid #333; /* Параметры рамки */
+            padding: 7px; /* Поля внутри блока */
+            margin: 10px 0 5px 5px; /* Отступы вокруг */
+            background: #f0f0f0; /* Цвет фона */
+            height: 35%;
+            width: 35%;
+        }
+        .L1 {
+            font-family: Arial;
+            width: 80%;
+        }
+        .L {
+            font-family: Arial;
+
+        }
+
+    </style>
+    <style type="text/css">
+           span.inlineBlock {
+               display: inline-block;
+               vertical-align: top;
+           }
+
+           .parent {
+               width: 100%;
+               background-color: #1D3740;
+           }
+
+           .child1 {
+
+               height:100%;
+               background: linear-gradient(to bottom, #19202B 0%,#2D3A4F 100%);
+           }
+
+           .child2 {
+
+               height:100%;
+               background: linear-gradient(to right, #99ccff -7%, #669999 26%);
+           }
+
+           .blk {
+               padding: 20px;
+               border: 2px solid #E81E25;
+               margin: 10px;
+               font-family: Pompadur, 'Comic Sans MS', cursive;
+
+           }
+       </style>
+    </head>
+    <body>
+        <header>
+          <div class=" layer4 L">
+          <h3>  Міша Чумак</h3>
+          </div>
+         </header>
+        <div id="main">
+            <article>
+              <span class="inlineBlock parent">
+                  <span class="inlineBlock child1">
+                      <div class="blk">
+                <center>
+                  <form method="post" id="myform" ></form>
+                     <table border="5px" bordercolor="	#000000" bgcolor="#7FFFD4" align="center" class="L1" >
+                         <thead>
+                             <tr>
+                                 <th>
+                                     <h4> Назва </h4>
+                                 </th>
+                                 <th>
+                                     <h4> Заповніть</h4>
+                                 </th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>Прізвеще та Імя</td>
+                                 <td><input type="text" name="first_name_and_last_name" form="myform" required ></td>
+                             </tr>
+                             <tr>
+                                 <td>E-mail</td>
+                                 <td><input type="text" name="email" form="myform" ></td>
+                             </tr>
+                             <tr>
+                                 <td>Дата народження</td>
+                                 <td><input type="date" id="date" name="date" form="myform" required></td>
+                             </tr>
+                             <tr>
+                                 <td>Стать</td>
+                                 <td>
+                                     <select name="sex" required>
+                                         <option  value="Man">Чоловік</option>
+                                         <option value="Wooman">Жінка</option>
+                                     </select>
+                                 </td>
+                             </tr>
+                         </tbody>
+                         <tfoot>
+                             <tr>
+                                 <th colspan="2">
+                                     <input type="submit" name="add" form="myform" value="Відправити" />
+                                 </th>
+                             </tr>
+                         </tfoot>
+                     </table>
+                 </center>
+</div>
+</span><span class="inlineBlock child2">
+
+              </span>
+          </span>
+            </article>
+            <nav><div class="layer3">
+    <h3>Навігація:</h3> <br>
+    <p>  <a href="index.html"> <h4 >WINDOWS 10</h4></p> <br>
+    <p>  <a href="index1.html" ><h4 >Таблиця</h4></a></p> <br>
+    <p>  <a href="index2.html" ><h4 >Фото</h4></a></p>
+    <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</div>
+            </nav>
+            <aside class="L">
+
+                <center>
+
+
+                </center>
+
+</div>
+        <footer><section> <center><h3>Це Мій сайт для 12 лабораторної роботи</h3></center></section></footer>
+    </body>
+</html>
